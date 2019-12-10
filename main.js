@@ -25,7 +25,7 @@ $(function() {
           pair: this.PAIR,
           interval: this.OHLC_DATA_INTERVAL
         },
-        dataType: "jsonp",
+        dataType: "json",
       })
     },
 
