@@ -20,6 +20,7 @@ $(function() {
       return $.ajax({
         url: this.getURL(),
         type: "POST",
+        crossDomain: true,
         data: {
           pair: this.PAIR,
           interval: this.OHLC_DATA_INTERVAL
