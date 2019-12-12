@@ -15,11 +15,154 @@
 </head>
 
 <body>
-	<div class="container">
+	<div class="container mt-4">
 		<div class="row">
 			<div class="col-lg-12">
-				<br />
-				<ul class="nav">
+				<p class="lead text-dark mb-3">
+					<span class="text-muted">BTC</span> = 6748.34<span class="text-muted"> EUR</span>
+				</h2>
+			</div>
+		</div>
+		<div class="row mb-4">
+			<div class="col-lg-10 px-0 py-0">
+				<div class="col-lg-12 px-0 py-0" style="margin-left: -8px; height: 500px;" id="chart"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-lg-2">
+						<div class="card border-success">
+							<div class="card-body text-success" style="padding: 10px 20px;">
+								<p class="my-0 mb-1">1 MIN</h5>
+								<div class="row">
+									<div class="col-lg-6">
+										<p class="h6 my-0 text-muted" style="font-size: 13px;">
+											<small>BEFORE</small>
+										</p>
+										<p class="my-0">6700</p>
+									</div>
+									<div class="col-lg-6">
+										<p class="h6 my-0 text-muted" style="font-size: 13px;">
+											<small>NOW</small>
+										</p>
+										<p class="my-0">6800</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="card border-danger">
+							<div class="card-body text-danger" style="padding: 10px 20px;">
+								<p class="my-0 mb-1">1 HOUR</h5>
+								<div class="row">
+									<div class="col-lg-6">
+										<p class="h6 my-0 text-muted" style="font-size: 13px;">
+											<small>BEFORE</small>
+										</p>
+										<p class="my-0">6700</p>
+									</div>
+									<div class="col-lg-6">
+										<p class="h6 my-0 text-muted" style="font-size: 13px;">
+											<small>NOW</small>
+										</p>
+										<p class="my-0">6400</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-2">
+						<div class="card border-success">
+							<div class="card-body text-success" style="padding: 10px 20px;">
+								<p class="my-0 mb-1">24 HOURS</h5>
+								<div class="row">
+									<div class="col-lg-6">
+										<p class="h6 my-0 text-muted" style="font-size: 13px;">
+											<small>BEFORE</small>
+										</p>
+										<p class="my-0">6700</p>
+									</div>
+									<div class="col-lg-6">
+										<p class="h6 my-0 text-muted" style="font-size: 13px;">
+											<small>NOW</small>
+										</p>
+										<p class="my-0">6800</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-2">
+						<div class="card border-success">
+							<div class="card-body text-success" style="padding: 10px 20px;">
+								<p class="my-0 mb-1">7 DAYS</h5>
+								<div class="row">
+									<div class="col-lg-6">
+										<p class="h6 my-0 text-muted" style="font-size: 13px;">
+											<small>BEFORE</small>
+										</p>
+										<p class="my-0">6700</p>
+									</div>
+									<div class="col-lg-6">
+										<p class="h6 my-0 text-muted" style="font-size: 13px;">
+											<small>NOW</small>
+										</p>
+										<p class="my-0">6800</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-2">
+						<div class="card border-success">
+							<div class="card-body text-success" style="padding: 10px 20px;">
+								<p class="my-0 mb-1">30 DAYS</h5>
+								<div class="row">
+									<div class="col-lg-6">
+										<p class="h6 my-0 text-muted" style="font-size: 13px;">
+											<small>BEFORE</small>
+										</p>
+										<p class="my-0">6700</p>
+									</div>
+									<div class="col-lg-6">
+										<p class="h6 my-0 text-muted" style="font-size: 13px;">
+											<small>NOW</small>
+										</p>
+										<p class="my-0">6800</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-2">
+						<div class="card border-success">
+							<div class="card-body text-success" style="padding: 10px 20px;">
+								<p class="my-0 mb-1">1 YEAR</p>
+								<div class="row">
+									<div class="col-lg-6">
+										<p class="h6 my-0 text-muted" style="font-size: 13px;">
+											<small>BEFORE</small>
+										</p>
+										<p class="my-0">6700</p>
+									</div>
+									<div class="col-lg-6">
+										<p class="h6 my-0 text-muted" style="font-size: 13px;">
+											<small>NOW</small>
+										</p>
+										<p class="my-0">6800</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<ul class="nav" style="display: none;">
 					<li class="nav-item">
 						<a class="nav-link active" href="#" id="1-minute">1M</a>
 					</li>
@@ -48,11 +191,7 @@
 						<a class="nav-link" href="#" id="2-weeks">15D</a>
 					</li>
 				</ul>
-				<br /><br />
-				<div id="chart" style="min-height: 600px; width: 900px;">
-				</div>
-				<div id="chart-bar" style="min-height: 200px; width: 900px;">
-				</div>
+
 			</div>
 		</div>
 	</div>
