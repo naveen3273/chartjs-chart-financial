@@ -228,9 +228,8 @@ $(function() {
         colors: ["#546E7A", "#E91E63"],
         stroke: {
           show: true,
-          curve: "sharp",
+          curve: "smooth",
           lineCap: "butt",
-          colors: undefined,
           width: 1,
           dashArray: 0
         },
@@ -596,14 +595,24 @@ $(function() {
     }
   }
 
-  namespace
-    .init({
-      url: "OHLC",
-      interval: 1,
-      pair: "XXBTZEUR"
-    })
-    .fetch()
-    .done(namespace.renderChart);
+  // namespace
+  //   .init({
+  //     url: "OHLC",
+  //     interval: 1,
+  //     pair: "XXBTZEUR"
+  //   })
+  //   .fetch()
+  //   .done(namespace.renderChart);
+
+    namespace
+      .init({
+        url: "OHLC",
+        interval: 1,
+        pair: "XXBTZEUR"
+      });
+
+    namespace.chartCandlestick = namespace.prepareLineChart('#chart');
+    namespace.chartCandlestick.render();
 
   $("#1-minute").click(function() {
     namespace.setInterval({
