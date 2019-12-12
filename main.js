@@ -19,7 +19,7 @@ $(function() {
 
     fetch: function() {
       return $.ajax({
-        url: 'kraken-api-client/php/example.php',
+        url: '',
         type: "GET",
         crossDomain: true,
         data: {
